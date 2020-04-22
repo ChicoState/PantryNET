@@ -1,10 +1,12 @@
 language: csharp
-solution: solution-name.sln
-mono:
-    - latest
-    - 3.12.0
-    - 3.10.0
-dotnet: 2.1.502
-script:
- - dotnet restore
-...
+solution: FirebaseAdmin/FirebaseAdmin.sln
+
+matrix:
+  include:
+    - dotnet: 2.1.502
+      mono: none
+      script:
+       - dotnet build FirebaseAdmin/FirebaseAdmin
+       - dotnet build FirebaseAdmin/FirebaseAdmin.Snippets
+       - dotnet build FirebaseAdmin/FirebaseAdmin.IntegrationTests
+       - dotnet test FirebaseAdmin/FirebaseAdmin.Tests
