@@ -3,5 +3,5 @@ mono: none
 dotnet: 2.1.502
 dist: trusty
 script:
- - dotnet restore
+ - dotnet restore -p:RestoreUseSkipNonexistentTargets=false -nowarn:msb3202,nu1503
 ...
