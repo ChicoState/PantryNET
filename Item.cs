@@ -44,5 +44,6 @@ public class Item {
   public void displayItem()
   {
     Console.WriteLine(name,quantity,price,productid);
+    Console.WriteLine("--------");
   }
 }
