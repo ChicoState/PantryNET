@@ -2,5 +2,6 @@ using System;
 public enum Provider {
 
   INDIVIDUAL,
-  ORGANIZATION
+  ORGANIZATION,
+  PURCHASED
 }
