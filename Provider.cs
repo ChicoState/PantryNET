@@ -1,8 +1,10 @@
 using System;
+using System.Collections;
 public enum ProviderType {
 
   INDIVIDUAL = 0,
-  ORGANIZATION = 1
+  ORGANIZATION = 1,
+  PURCHASED = 2
 }
 
 public class Provider {
