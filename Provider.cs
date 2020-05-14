@@ -59,10 +59,9 @@ public class Provider {
 
   }
 
-<<<<<<< HEAD
+{
   INDIVIDUAL,
   ORGANIZATION,
   PURCHASED
-=======
->>>>>>> 9c9e7c7cba344578213c35825f24480981e9263f
+
 }
