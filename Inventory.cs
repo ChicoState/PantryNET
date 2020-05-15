@@ -40,6 +40,7 @@ public class displayInventory {
     }
   }
 }
+
 public class Invent {
   private static Inventory inventory = null;
 	ArrayList inv = new ArrayList();
@@ -62,7 +63,7 @@ public class Invent {
 		}
 		myList.remove(code);
 	}
-
+  
 	// If rental item is returned, move item back from rented to in stock
 	/*public void returnToInventory(String code)
 	{
