@@ -7,14 +7,26 @@ We want to create a system to manage the inventory of a food pantry, as well as 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 # Installation
- Visual Studio
+Installation and Running the Program
+1.Install Visual Studio Code/Visual Studio( In case of MAC user install Visual Studio Code/Visual Studio for MAC)
+2.Install the .NET Core SDK.
 
+Running the program
+1. Save the project folder
+2. Open the terminal at the project folder path
+3. Run command csc Report.cs
+4. Exe file will be generated
+5. Run command Report.exe
 
+# Continuous Integration - Travis CI
 
-# Prerequisites
+Travis CI is a hosted, distributed continuous integration service used to build and test projects hosted at GitHub.
 
-# Continuous Integration
-  // How to run
+It automatically detects when a commit has been made and pushed to a GitHub repository that is using Travis CI, and each time this happens, it will try to build the project and run tests.
+
+travis. yml , which is a YAML format text file, to the root directory of the repository.
+
+This file specifies the programming language used, the desired building and testing environment (including dependencies which must be installed before the software can be built and tested), and various other parameters.
 
 # Static Analysis using NDepend
 
