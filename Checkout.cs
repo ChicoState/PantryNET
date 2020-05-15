@@ -12,13 +12,14 @@ public class Checkout{
   private ItemType type;
   private string itemName;
   private int itemCode;
+  private DateTime expirydate;
   private int checkoutID;
   private DateTime rentaldate;
-  private DateTime expirydate;
+
 // return rented item
 public void returnRentedItem(String code, double qty){
-  Checkout co = new Checkout();
-  co.returnItem(code, qty);
+  Checkout new = new Checkout();
+  new.returnItem(code, qty);
 }
 //Set a unique ID for Checkout
 public void setCheckoutID(int id)
@@ -36,9 +37,9 @@ public int getCheckoutID()
 // everything. Then add the checkout to the transaction history
 public void checkoutItems(){
   Checkout co = new Checkout();
-  co.getCart(cart);
-  co.checkoutAll();
-  transactionHistory.add(co);
+  new.getCart(cart);
+  new.checkoutAll();
+  transactionHistory.add(new);
 }
 }
 public class RegularOrder : OrderBase
