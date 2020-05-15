@@ -7,15 +7,26 @@ We want to create a system to manage the inventory of a food pantry, as well as 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 # Installation
-What things you need to install the software and how to install them
+ Visual Studio
+
+
 
 # Prerequisites
 
 # Continuous Integration
   // How to run
 
+# Static Analysis using NDepend
 
+Static code analysis is a method of debugging by examining source code before a program is run. ... Static analysis is commonly used to comply with coding guidelines — such as NDepend.
 
+NDepend is a static analysis tool for .NET managed code.
+
+The tool supports a large number of code metrics that allow one to visualize dependencies using directed graphs and dependency matrix. The tool also performs code base snapshot comparisons, and validation of architectural and quality rules. User-defined rules can be written using LINQ queries. This feature is named CQLinq. The tool also comes with a large number of predefined CQLinq code rules. Code rules can be checked automatically in Visual Studio or during continuous integration.
+
+For more information please go thorugh below link,
+
+$ /bin/bash -c "$(curl -fsSL https://en.wikipedia.org/wiki/NDepend)"
 
 # Running the tests
 Explain how to run the automated tests for this system
