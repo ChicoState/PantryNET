@@ -40,16 +40,22 @@ public class displayInventory {
     }
   }
 }
+//Enumeration for ITEM TYPE
 public enum ItemType {
 
   RENTAL = 0,
   NONRENTAL = 1,
 }
+
 public class Invent {
   private static Inventory inventory = null;
 	ArrayList inv = new ArrayList();
   var myList = new List<KeyValuePair<string, Item>>();
   private ItemType type;
+  private string itemName;
+  private int itemCode;
+  private DateTime rentaldate;
+  private DateTime expirydate;
 
 
 	//Creating Instance for Inventory
@@ -69,6 +75,8 @@ public class Invent {
 		}
 		myList.remove(code);
 	}
+
+  //function to find out the typeofItem
   public ItemT(String name, String type)
   {
     id = itemid;
@@ -80,6 +88,32 @@ public class Invent {
     else {
       this.type = ItemType.NONRENTAL;
     }
+  }
+  //function to get details of Rental Item
+  public void getRentalItem()
+  {
+    return itemName;
+
+  }
+  //function to set the expirydate
+  public void setexpirydate(DateTime d)
+  {
+    expirydate = d;
+  }
+  //function to set rentaldate
+  public void setrentaldate(DateTime d)
+  {
+    rentaldate = d;
+  }
+  //function to get rental date
+  public DateTime getRentalDueDate()
+  {
+    return rentaldate;
+  }
+  //function to get expiry date
+  public DateTime getExpiryDate()
+  {
+    return expirydate;
   }
 	public void addToInventory(string code,Item item)
 	{
