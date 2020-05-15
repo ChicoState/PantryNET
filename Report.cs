@@ -57,6 +57,7 @@ namespace BuilderDesignPattern
         public string ReportItemCode { get; set; }
         public string ReportDate { get; set; }
         public string ReportName { get; set; }
+        //function to display report
         public void DisplayReport()
         {
             Console.WriteLine("Report Type :" + ReportType);
@@ -67,7 +68,7 @@ namespace BuilderDesignPattern
             Console.WriteLine("Expiry Name :" + ReportName);
         }
     }
-
+    //Abstract class interface for report
     public abstract class ReportBuilder
     {
         protected Report reportObject;
@@ -86,6 +87,7 @@ namespace BuilderDesignPattern
             return reportObject;
         }
     }
+    //Two different reports : Expiry report
     public class Expiry : ReportBuilder
     {
 
@@ -114,6 +116,7 @@ namespace BuilderDesignPattern
             reportObject.ReportName = "Banana";
         }
     }
+    //Class for TotalDonated Report
     public class TotalDonated : ReportBuilder
     {
         public override void SetReportContent()
@@ -170,7 +173,7 @@ namespace BuilderDesignPattern
             TotalDonated totaldonated = new TotalDonated();
             report = reportDirector.MakeReport(totaldonated);
             report.DisplayReport();
-            
+
             Console.WriteLine("");
             Console.WriteLine("-------------------");
             Console.WriteLine("-----------------------------------");

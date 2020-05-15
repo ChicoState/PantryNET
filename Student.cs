@@ -40,15 +40,6 @@ public class Student {
 		return cart;
 	}
 
-	// Create a new checkout, get student's complete cart, and checkout
-	// everything. Then add the checkout to the transaction history
-	public void checkoutItems(){
-		Checkout co = new Checkout();
-		co.getCart(cart);
-		co.checkoutAll();
-		transactionHistory.add(co);
-	}
-
 	// add item with given code and qty to the student's cart
 	public void addItemToCart(String code, double qty){
 		cart.put(code, qty);

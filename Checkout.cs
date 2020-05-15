@@ -41,6 +41,22 @@ public void checkoutItems(){
   transactionHistory.add(co);
 }
 }
+public class RegularOrder : OrderBase
+{
+    public override double CalculateTotalOrderPrice()
+    {
+        Console.WriteLine("Calculating the total price of a regular order");
+        return products.Sum(x => x.Price);
+    }
+}
+public class Preorder : OrderBase
+{
+    public override double CalculateTotalOrderPrice()
+    {
+        Console.WriteLine("Calculating the total price of a preorder.");
+        return products.Sum(x => x.Price) * 0.9;
+    }
+}
 
 class New
 {
