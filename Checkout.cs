@@ -4,16 +4,19 @@ using System.Linq;
 using System.Web;
 using System.Collections;
 
-public abstract class OrderBase
-{
-    protected List<Product> products = new List<Product>
-    {
-        new Product {Name = "Phone", Price = 587},
-        new Product {Name = "Tablet", Price = 800},
-        new Product {Name = "PC", Price = 1200}
-    };
 
-    public abstract double CalculateTotalOrderPrice();
+// return rented item
+public void returnRentedItem(String code, double qty){
+  Checkout co = new Checkout();
+  co.returnItem(code, qty);
+}
+// Create a new checkout, get student's complete cart, and checkout
+// everything. Then add the checkout to the transaction history
+public void checkoutItems(){
+  Checkout co = new Checkout();
+  co.getCart(cart);
+  co.checkoutAll();
+  transactionHistory.add(co);
 }
 
 public class RegularOrder : OrderBase
