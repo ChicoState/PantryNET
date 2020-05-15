@@ -49,7 +49,12 @@ Hat tip to anyone whose code was used
 Inspiration
 etc
 
+# UML Class Diagram before change
+
 ![UML for the before PantryNET](before.png "UML class diagram of PantryNET before the changes")
+
+# UML Class Diagram after change
+
 ![UML for the after PantryNET](after.png "UML class diagram of PantryNET after the changes")
 
 [![Build Status](https://travis-ci.com/Dikshap/PantryNET.svg?branch=master)](https://travis-ci.com/Dikshap/PantryNET.svg?branch=master)
