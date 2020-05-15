@@ -60,7 +60,7 @@ public class Student {
 		co.returnItem(code, qty);
 	}
 
-	/*Display complete Checkout History*/
+	// Display complete Checkout History
 	public void displayCheckoutHistory()
 	{
 		for (Checkout co : transactionHistory) {
