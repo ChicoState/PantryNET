@@ -33,12 +33,11 @@ public class Provider {
     provider.add(this.type.name());
     return provider;
   }
-
+//Provider adding Item to the inventory
   public void addItem(Item item){
     Guid guid = Guid.NewGuid();
     string item = guid.ToString();
-    //see if we already have an item list for current code (key)
-    //if not create one and put it in the map
+
     ArrayList<Item> itemList = donatedSold.computeIfAbsent(item.getCode(), k -> new ArrayList<>());
     itemList.add(item);
   }
@@ -58,10 +57,3 @@ public class Provider {
   }
 
   }
-
-{
-  INDIVIDUAL,
-  ORGANIZATION,
-  PURCHASED
-
-}
