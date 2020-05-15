@@ -63,18 +63,6 @@ public class Invent {
 		}
 		myList.remove(code);
 	}
-  
-	// If rental item is returned, move item back from rented to in stock
-	/*public void returnToInventory(String code)
-	{
-		stock.put(code, rented.get(code));
-	}*/
-
-	// Add item to inventory
-	// 1. If item code is already in inventory, add this item to the list of
-	//    items with the same code
-	// 2. Otherwise, create a new entry for the requested code and add this item
-	//    to the new item list for this code
 	public void addToInventory(string code,Item item)
 	{
 
@@ -94,22 +82,12 @@ public class Invent {
         quantity=item.getcount()+noofitems;
 	}
 
-	// Get the available stock
+
 	public HashMap<String, ArrayList<Item>> getAvailableItems() {
 		return stock;
 	}
 
-	// Check (by code) if item is a rental item
-	/*public boolean isRental(String code){
-		ArrayList<Item> items = stock.get(code);
-		Item curItem = items.get(0);
-		if(Boolean.TRUE.equals(curItem.getRental())){
-			return true;
-		}
-		else{
-			return false;
-		}
-	}*/
+
 
   public Boolean ItemAvailable(String code)
   {
