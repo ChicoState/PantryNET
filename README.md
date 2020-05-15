@@ -49,11 +49,11 @@ Hat tip to anyone whose code was used
 Inspiration
 etc
 
-# UML Class Diagram before change
+# UML Class Diagram before the change
 
 ![UML for the before PantryNET](before.png "UML class diagram of PantryNET before the changes")
 
-# UML Class Diagram after change
+# UML Class Diagram after the change
 
 ![UML for the after PantryNET](after.png "UML class diagram of PantryNET after the changes")
 
