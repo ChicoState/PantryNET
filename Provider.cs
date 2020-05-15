@@ -41,6 +41,7 @@ public class Provider {
     ArrayList<Item> itemList = donatedSold.computeIfAbsent(item.getCode(), k -> new ArrayList<>());
     itemList.add(item);
   }
+
   // check if item is PLU or not, using safe operation
   public boolean isItemPlu(boolean itemType){
     return Boolean.TRUE.equals(itemType);
