@@ -14,6 +14,7 @@ namespace BuilderDesignPattern
         private double totalprice = 0.0;
         public double Itemcode = 2345;
         public double Date;
+        public string Name;
 
         //Function to Add the item count
         public void addItemCount(double x)
@@ -35,19 +36,27 @@ namespace BuilderDesignPattern
         {
             return totalprice;
         }
+        //Function to find out Item Code
         public double getItemCode()
         {
             return Itemcode;
         }
+        //Function to find out Expiry Date of Item
         public double getExpiryDate()
         {
             return Date;
+        }
+        //Function to get the Item Name
+        public string getItemName()
+        {
+            return Name;
         }
         public string ReportType { get; set; }
         public string ReportNoItems { get; set; }
         public string ReportContent { get; set; }
         public string ReportItemCode { get; set; }
         public string ReportDate { get; set; }
+        public string ReportName { get; set; }
         public void DisplayReport()
         {
             Console.WriteLine("Report Type :" + ReportType);
@@ -55,7 +64,7 @@ namespace BuilderDesignPattern
             Console.WriteLine("Content :" + ReportContent);
             Console.WriteLine("Item Code :" + ReportItemCode);
             Console.WriteLine("Expiry Date :" + ReportDate);
-
+            Console.WriteLine("Expiry Name :" + ReportName);
         }
     }
 
@@ -67,6 +76,7 @@ namespace BuilderDesignPattern
         public abstract void SetReportContent();
         public abstract void SetReportItemCode();
         public abstract void SetReportDate();
+        public abstract void SetReportName();
         public void CreateNewReport()
         {
             reportObject = new Report();
@@ -78,6 +88,7 @@ namespace BuilderDesignPattern
     }
     public class Expiry : ReportBuilder
     {
+
         public override void SetReportContent()
         {
             reportObject.ReportContent = "Expiry Report";
@@ -97,6 +108,10 @@ namespace BuilderDesignPattern
         public override void SetReportDate()
         {
             reportObject.ReportDate = "05/20/2020";
+        }
+        public override void SetReportName()
+        {
+            reportObject.ReportName = "Banana";
         }
     }
     public class TotalDonated : ReportBuilder
@@ -122,6 +137,10 @@ namespace BuilderDesignPattern
         {
             reportObject.ReportDate = "05/20/2020";
         }
+        public override void SetReportName()
+        {
+            reportObject.ReportName = "Banana";
+        }
     }
     public class ReportDirector
     {
@@ -133,6 +152,7 @@ namespace BuilderDesignPattern
             reportBuilder.SetReportContent();
             reportBuilder.SetReportItemCode();
             reportBuilder.SetReportDate();
+            reportBuilder.SetReportName();
             return reportBuilder.GetReport();
         }
     }
@@ -144,13 +164,22 @@ namespace BuilderDesignPattern
             Report report;
             ReportDirector reportDirector = new ReportDirector();
             // Construct and display Reports
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("-----Details of Total Donated Report-----");
+            Console.WriteLine("");
             TotalDonated totaldonated = new TotalDonated();
             report = reportDirector.MakeReport(totaldonated);
             report.DisplayReport();
+            
+            Console.WriteLine("");
             Console.WriteLine("-------------------");
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("-----Details of Expiry Report-----");
+            Console.WriteLine("");
+
             Expiry expiry = new Expiry();
             report = reportDirector.MakeReport(expiry);
-            report.DisplayReport();
+            report.DisplayReport();*/
 
             Console.ReadKey();
         }
