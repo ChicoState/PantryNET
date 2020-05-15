@@ -63,7 +63,7 @@ public class Item {
   //set the UPC code to false
   public Boolean isUPC()
   {
-    return plu;
+    return upc;
   }
 
 
