@@ -53,6 +53,10 @@ public class Student {
   		co.displayCheckoutInfo();
   	  }
   }
-
+		// return rented item
+	public void returnRentedItem(String code, double qty){
+		Checkout co = new Checkout();
+		co.returnItem(code, qty);
+	}
 
 }
