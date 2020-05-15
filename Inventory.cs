@@ -40,13 +40,19 @@ public class displayInventory {
     }
   }
 }
+public enum ItemType {
 
+  RENTAL = 0,
+  NONRENTAL = 1,
+}
 public class Invent {
   private static Inventory inventory = null;
 	ArrayList inv = new ArrayList();
   var myList = new List<KeyValuePair<string, Item>>();
+  private ItemType type;
 
-	// Inventory is a singleton (ensure there is only 1 Inventory instance)
+
+	//Creating Instance for Inventory
 	public static Inventory getInstance()
 	{
 		if (inventory == null)
@@ -63,6 +69,18 @@ public class Invent {
 		}
 		myList.remove(code);
 	}
+  public ItemT(String name, String type)
+  {
+    id = itemid;
+    this.name = name;
+    if(type.equals("rental"))
+    {
+      this.type = ItemType.RENTAL;
+    }
+    else {
+      this.type = ItemType.NONRENTAL;
+    }
+  }
 	public void addToInventory(string code,Item item)
 	{
 
@@ -83,15 +101,15 @@ public class Invent {
 	}
 
 
-	public HashMap<String, ArrayList<Item>> getAvailableItems() {
+	public List<String, ArrayList<Item>> getAvailableItems() {
 		return stock;
 	}
 
 
-
-  public Boolean ItemAvailable(String code)
+  //Function to check if the Item is available in the Inventory.
+  public Boolean getItemAvailability(String itemCode)
   {
-    return myList.get(code) != null;
+    return myList.get(itemCode) != null;
   }
 
 }
