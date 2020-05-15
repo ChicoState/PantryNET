@@ -21,6 +21,7 @@ class Inventory {
   }
 }
 
+// Class to display inventory
 public class displayInventory {
   public static void Main() {
     ArrayList inv = new ArrayList();
