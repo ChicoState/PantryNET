@@ -5,4 +5,4 @@ Chico State, like many other universities, has a food pantry for students who do
 We want to create a system to manage the inventory of a food pantry, as well as generate reports about the pantry's activities. We need to design a website that manages the information.
 
 
-[![Build Status](https://travis-ci.com/Dikshap/travis-ci-hello-world-c-sharp.svg?branch=master)](https://travis-ci.com/Dikshap/travis-ci-hello-world-c-sharp.svg?branch=master)
+[![Build Status](https://travis-ci.com/Dikshap/PantryNET.svg?branch=master.svg?branch=master)](https://travis-ci.com/Dikshap/PantryNET.svg?branch=master.svg?branch=master)
