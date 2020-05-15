@@ -59,4 +59,9 @@ public class Provider {
 
   }
 
+{
+  INDIVIDUAL,
+  ORGANIZATION,
+  PURCHASED
+
 }

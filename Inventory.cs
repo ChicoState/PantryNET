@@ -21,6 +21,7 @@ class Inventory {
   }
 }
 
+// Class to display inventory
 public class displayInventory {
   public static void Main() {
     ArrayList inv = new ArrayList();
@@ -39,6 +40,7 @@ public class displayInventory {
     }
   }
 }
+
 public class Invent {
   private static Inventory inventory = null;
 	ArrayList inv = new ArrayList();
@@ -61,7 +63,6 @@ public class Invent {
 		}
 		myList.remove(code);
 	}
-
 	public void addToInventory(string code,Item item)
 	{
 
