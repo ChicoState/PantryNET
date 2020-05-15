@@ -115,35 +115,28 @@ public class Invent {
   {
     return expirydate;
   }
-	public void addToInventory(string code,Item item)
+  //function to add item in the inventory
+	public void addItem(string code,Item item)
 	{
 
     myList.Add(new KeyValuePair<code, Item>('234543678','fdkjfdk'));
 	}
-
-
+  //function to reduce quantity from the inventory
 	public void reduceItemQuantity(String code, double noofitems) {
 
     var myItem = (from c in myList where item.id == code select c).FirstOrDefault();
         quantity=item.getcount()-noofitems;
 
 	}
-
+  //function to increase quantity in the inventory
 	public void increaseItemQuantity(String code, double quantity){
     var myItem = (from c in myList where item.id == code select c).FirstOrDefault();
         quantity=item.getcount()+noofitems;
 	}
 
-
+  //Function to check if the Item is available in the inventory
 	public List<String, ArrayList<Item>> getAvailableItems() {
 		return stock;
 	}
-
-
-  //Function to check if the Item is available in the Inventory.
-  public Boolean getItemAvailability(String itemCode)
-  {
-    return myList.get(itemCode) != null;
-  }
 
 }
