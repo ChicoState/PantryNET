@@ -5,7 +5,9 @@ Our goal is to make a pantry project for the Chico State, like many other univer
 
 We want to create a system to manage the inventory of a food pantry, as well as generate reports about the pantry's activities. We need to design a website that manages the information.
 
-Our project keeps track of all the details of the Pantry activities.
+Our project keeps track of all the details of the Pantry activities. Details are as below,
+
+1.  
 
 # Short Links to Important Resources:
    docs: handbook / roadmap (you'll learn more about this in the roadmapping session)
