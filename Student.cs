@@ -7,23 +7,17 @@ public class Student {
   string id = guid.ToString();
   private Student student;
   //private final long studentId;
-	ArrayList<Checkout> transactionHistory = new ArrayList<>();
-
-	ArrayList<UUID> studentT=new ArrayList<>();
-
-	// generates random 9 digit student id
-	Student() {
-
-    Random rand = new Random(100);
-    int code=  rand.Next(000000000, 999999999);
+  ArrayList<Checkout> transactionHistory = new ArrayList<>();
+  ArrayList<UUID> studentT=new ArrayList<>();
+  // function to generates random 9 digit student id
+  Student() {
+	  Random rand = new Random(100);
+    	  int code=  rand.Next(000000000, 999999999);
 	}
-
-	public string getStudentId(){
+  public string getStudentId(){
 		return sid;
-	}
-
-
-	/* Returns checkout history of student */
+  }
+  /* Returns checkout history of student */
 	public ArrayList<Checkout> getTransactionHistory() {
 		return transactionHistory;
 	}
