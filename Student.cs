@@ -17,22 +17,17 @@ public class Student {
   public string getStudentId(){
 		return sid;
   }
-  /* Returns checkout history of student */
-	public ArrayList<Checkout> getTransactionHistory() {
-		return transactionHistory;
-	}
-
-	// Get info about all items in the student's cart
-	public HashMap<String, Double> getCartInfo(){
-		int count = 1;
-		for (Entry<String, Double> itm : cart.entrySet()) {
-			System.out.println("\t" + count + ".");
-			System.out.println("\tItem code: " + itm.getKey());
-			System.out.println("\tItem quantity: " + itm.getValue());
-			count++;
-		}
-		return cart;
-	}
+ // Get info about all items in the student's cart
+  public ArrayList<keyvaluepair<String, Double>> getCartInfo(){
+  int count = 1;
+  for (studentT<String, Double> itm : cart.entrySet()) {
+  System.out.println("\t" + count + ".");
+  System.out.println("\tItem code: " + itm.getKey());
+  System.out.println("\tItem quantity: " + itm.getValue());
+  count++;
+  }
+  return cart;
+  }
 
 	// add item with given code and qty to the student's cart
 	public void addItemToCart(String code, double qty){
