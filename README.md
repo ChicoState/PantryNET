@@ -40,7 +40,13 @@ $ /bin/bash -c "$(curl -fsSL https://en.wikipedia.org/wiki/NDepend)"
 
 Contributors are present in [Contributors](CONTRIBUTOR.md)
 
+## Licensing
+
+This project is licensed following the MIT licene given in
+[License](./LICENSE)
+
 ## References
+
 $ /bin/bash -c "$(curl -fsSL https://www.google.com/)"
 
 ## Acknowledgement
