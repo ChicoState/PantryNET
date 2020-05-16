@@ -9,6 +9,26 @@ public class Item {
   private int productid = 0;
   private boolean upc = false;
 
+   //function to set the expirydate
+  public void setCheckOutdate(DateTime d)
+  {
+    expirydate = d;
+  }
+  //function to set rentaldate
+  public void setCheckIndate(DateTime d)
+  {
+    rentaldate = d;
+  }
+  //function to get rental date
+  public DateTime getCheckOutDate()
+  {
+    return rentaldate;
+  }
+  //function to get expiry date
+  public DateTime getCheckInDate()
+  {
+    return expirydate;
+  }
   //function to set the name of Item
   public void setItemName(String n)
   {
