@@ -8,7 +8,29 @@ public class Item {
   private double price;
   private int productid = 0;
   private boolean upc = false;
+  private DateTime CheckOutDate;
+  private DateTime CheckInDate;
 
+   //function to set the expirydate
+  public void setCheckOutdate(DateTime d)
+  {
+    CheckOutDate = d;
+  }
+  //function to set rentaldate
+  public void setCheckIndate(DateTime d)
+  {
+    CheckInDate = d;
+  }
+  //function to get rental date
+  public DateTime getCheckOutDate()
+  {
+    return CheckOutDate;
+  }
+  //function to get expiry date
+  public DateTime getCheckInDate()
+  {
+    return CheckInDate;
+  }
   //function to set the name of Item
   public void setItemName(String n)
   {
