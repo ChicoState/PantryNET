@@ -14,5 +14,13 @@ public class Staff{
   public void addItemToInventory(String code, double qty){
 		cart.put(code, qty);
  }
+	
+ // Display complete Checkout History
+  public void displayCheckoutHistory()
+  {
+  	for (Checkout check : transactionHistory) {
+  		check.displayCheckoutInfo();
+  	  }
+  }
 
 }
