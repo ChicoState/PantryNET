@@ -20,7 +20,11 @@ Our project keeps track of all the details of the Pantry activities. Details of 
 
 2. Student
    It handles only Item, Item quantity and ask staff to check it out selected Items.
+
 3. Inventory
+   It keeps track of all the available item, inventory details, gets the provider details to keep the records.
+   It can add and remove items and  display all the inventory records details.
+   Staff can get the details from the inventory and use it to get reports for the same.
 
 4. Item
    We have used Abstract Factory Design Pattern for this class       
@@ -38,6 +42,9 @@ Our project keeps track of all the details of the Pantry activities. Details of 
       3. NonPerishableConcreteItem class-
 
 5. Provider
+   Used enumeration for three types of the Providers(INDIVIDUAL, ORGANIZATION and PURCHASED)
+   It stores all the details of the provided items, quanity and donated items amount.
+
 
 6. Report
    We have used Builder Pattern for the Report Class report to generate two types of report.
@@ -63,6 +70,7 @@ Our project keeps track of all the details of the Pantry activities. Details of 
       Represents the complex object under construction. ConcreteBuilder builds the report's internal representation and defines the process by which it's assembled.
 
 7. CheckOut
+   It has all the details of checked out items, the number of items checked out for students and the total number of the checked outs.  
 
 # Short Links to Important Resources:
 
