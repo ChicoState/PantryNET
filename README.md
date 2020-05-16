@@ -40,6 +40,11 @@ $ /bin/bash -c "$(curl -fsSL https://en.wikipedia.org/wiki/NDepend)"
 # References
 $ /bin/bash -c "$(curl -fsSL https://www.google.com/)"
 
+# Acknowledgement
+
+* [GitHub](https://github.com/kbuffardi)
+* [CSU Chico Portal](https://www.csuchico.edu/basic-needs/pantry.shtml)
+* [Search Engine](https://www.google.com/) 
 
 # UML Class Diagram before the change
 
