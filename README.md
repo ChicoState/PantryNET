@@ -32,7 +32,7 @@ We have to add the NDepend extension to our Visual Studio, from that extension w
 NDepend is charged software.
 
 
-For more information please go thorugh below link,
+For more information please go thorugh below link:
 ```{bash}
 $ /bin/bash -c "$(curl -fsSL https://en.wikipedia.org/wiki/NDepend)"
 ```
