@@ -67,9 +67,7 @@ $ /bin/bash -c "$(curl -fsSL https://www.google.com/)"
 
 Travis CI is a hosted, distributed continuous integration service used to build and test projects hosted at GitHub.
 
-It automatically detects when a commit has been made and pushed to a GitHub repository that is using Travis CI, and each time this happens, it will try to build the project and run tests.
-
-travis. yml , which is a YAML format text file, to the root directory of the repository.
+It automatically detects when a commit has been made and pushed to a GitHub repository that is using Travis CI, and each time this happens, it will try to build the project and run tests.Travis.yml , which is a YAML format text file, to the root directory of the repository.
 
 This file specifies the programming language used, the desired building and testing environment (including dependencies which must be installed before the software can be built and tested), and various other parameters.
 
