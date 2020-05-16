@@ -31,11 +31,11 @@ public class Student {
   		check.displayCheckoutInfo();
   	  }
   }
-		// return rented item
-	public void returnRentedItem(String code, double qty){
-		Checkout check = new Checkout();
-		check.returnItem(code, qty);
-	}
+ // return rented item
+ public void returnRentedItem(String code, double qty){
+	Checkout check = new Checkout();
+	check.returnItem(code, qty);
+ }
 
 }
  // Get info about all items in the student's cart
