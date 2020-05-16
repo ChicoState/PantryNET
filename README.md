@@ -8,8 +8,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 # Installation
 Installation and Running the Program
-1.Install Visual Studio Code/Visual Studio( In case of MAC user install Visual Studio Code/Visual Studio for MAC)
-2.Install the .NET Core SDK.
+1. Install Visual Studio Code/Visual Studio( In case of MAC user install Visual Studio  Code/Visual Studio for MAC)
+2. Install the .NET Core SDK.
 
 Running the program
 1. Save the project folder
@@ -20,13 +20,17 @@ Running the program
 
 # Static Analysis using NDepend
 
-Static code analysis is a method of debugging by examining source code before a program is run. ... Static analysis is commonly used to comply with coding guidelines — such as NDepend.
+Static code analysis is a method of debugging by examining source code before a program is run. We used NDepend to check the static analysis of our C sharp code.
 
 NDepend is a static analysis tool for .NET managed code.
 
 The tool supports a large number of code metrics that allow one to visualize dependencies using directed graphs and dependency matrix. The tool also performs code base snapshot comparisons, and validation of architectural and quality rules. User-defined rules can be written using LINQ queries. This feature is named CQLinq. The tool also comes with a large number of predefined CQLinq code rules. Code rules can be checked automatically in Visual Studio or during continuous integration.
+We have to add the NDepend extension to our Visual Studio, from that extension we can easily generate the report and see the detailed analysis of the code.
+NDepend is charged software.
+
 
 For more information please go thorugh below link,
+{bash}
 
 $ /bin/bash -c "$(curl -fsSL https://en.wikipedia.org/wiki/NDepend)"
 
