@@ -1,3 +1,6 @@
+## Maintenance Project
+  Diksha Pande, Deepali Patil
+
 # PantryNET
 
 Chico State, like many other universities, has a food pantry for students who do not have access to enough to eat.The pantry provides food for students for free by storing donated and wholesale purchased bulk foods.
@@ -34,37 +37,9 @@ For more information please go thorugh below link,
 $ /bin/bash -c "$(curl -fsSL https://en.wikipedia.org/wiki/NDepend)"
 ```
 
-# Running the tests
-Explain how to run the automated tests for this system
-
-Break down into end to end tests
-Explain what these tests test and why
-
-Give an example
-And coding style tests
-Explain what these tests test and why
-
-Give an example
-# Deployment
-Add additional notes about how to deploy this on a live system
-
-Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-
-# Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
+# References
 
 
-# Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
 
 # UML Class Diagram before the change
 
