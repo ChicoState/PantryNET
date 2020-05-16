@@ -10,14 +10,14 @@ public enum ProviderType {
 public class Provider {
 
   private int providerid = Guid.NewGuid().ToString()
-  private String name;
+  private String sname;
   private ProviderType type;
   private ArrayList inv = new ArrayList();
 
-  public Provider(String name, String type)
+  public Provider(String sname, String type)
   {
     id = providerid;
-    this.name = name;
+    this.sname = sname;
     if(type.equals("organization"))
     {
       this.type = ProviderType.ORGANIZATION;
@@ -29,8 +29,8 @@ public class Provider {
   public ArrayList<string> getInfo(){
     ArrayList provider = new ArrayList<string>();
     provider.add(this.id.toString());
-    provider.add(this.name);
-    provider.add(this.type.name());
+    provider.add(this.sname);
+    provider.add(this.type.sname());
     return provider;
   }
 //Provider adding Item to the inventory
