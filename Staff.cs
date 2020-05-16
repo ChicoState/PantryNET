@@ -6,7 +6,10 @@ using System.Collections;
 
 public class Staff{
   
-  public static void class(){
+    public string getStudentId(){
+		return sid;
   }
+
+ 
 
 }
