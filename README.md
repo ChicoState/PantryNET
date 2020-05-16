@@ -27,9 +27,8 @@ Static code analysis is a method of debugging by examining source code before a 
 
 NDepend is a static analysis tool for .NET managed code.
 
-The tool supports a large number of code metrics that allow one to visualize dependencies using directed graphs and dependency matrix. The tool also performs code base snapshot comparisons, and validation of architectural and quality rules. User-defined rules can be written using LINQ queries. This feature is named CQLinq. The tool also comes with a large number of predefined CQLinq code rules. Code rules can be checked automatically in Visual Studio or during continuous integration.
-We have to add the NDepend extension to our Visual Studio, from that extension we can easily generate the report and see the detailed analysis of the code.
-NDepend is charged software.
+The tool supports a large number of code metrics that allow one to visualize dependencies using directed graphs and dependency matrix. The tool also performs code base snapshot comparisons, and validation of architectural and quality rules. User-defined rules can be written using LINQ queries. This feature is named CQLinq. The tool also comes with a large number of predefined CQLinq code rules. Code rules can be checked automatically in Visual Studio/Visual Studio Code or during continuous integration.
+We have to add the NDepend extension to our Visual Studio/Visual Studio Code, from that extension we can easily generate the report and see the detailed analysis on the Visual Studio or on the Chrome Server.NDepend is a charged software.
 
 
 For more information please go thorugh below link:
@@ -68,9 +67,7 @@ $ /bin/bash -c "$(curl -fsSL https://www.google.com/)"
 
 Travis CI is a hosted, distributed continuous integration service used to build and test projects hosted at GitHub.
 
-It automatically detects when a commit has been made and pushed to a GitHub repository that is using Travis CI, and each time this happens, it will try to build the project and run tests.
-
-travis. yml , which is a YAML format text file, to the root directory of the repository.
+It automatically detects when a commit has been made and pushed to a GitHub repository that is using Travis CI, and each time this happens, it will try to build the project and run tests.Travis.yml , which is a YAML format text file, to the root directory of the repository.
 
 This file specifies the programming language used, the desired building and testing environment (including dependencies which must be installed before the software can be built and tested), and various other parameters.
 
