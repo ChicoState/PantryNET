@@ -18,16 +18,6 @@ Running the program
 4. Exe file will be generated
 5. Run command Report.exe
 
-# Continuous Integration - Travis CI
-
-Travis CI is a hosted, distributed continuous integration service used to build and test projects hosted at GitHub.
-
-It automatically detects when a commit has been made and pushed to a GitHub repository that is using Travis CI, and each time this happens, it will try to build the project and run tests.
-
-travis. yml , which is a YAML format text file, to the root directory of the repository.
-
-This file specifies the programming language used, the desired building and testing environment (including dependencies which must be installed before the software can be built and tested), and various other parameters.
-
 # Static Analysis using NDepend
 
 Static code analysis is a method of debugging by examining source code before a program is run. ... Static analysis is commonly used to comply with coding guidelines — such as NDepend.
@@ -79,5 +69,16 @@ etc
 # UML Class Diagram after the change
 
 ![UML for the after PantryNET](after.png "UML class diagram of PantryNET after the changes")
+
+
+# Continuous Integration - Travis CI
+
+Travis CI is a hosted, distributed continuous integration service used to build and test projects hosted at GitHub.
+
+It automatically detects when a commit has been made and pushed to a GitHub repository that is using Travis CI, and each time this happens, it will try to build the project and run tests.
+
+travis. yml , which is a YAML format text file, to the root directory of the repository.
+
+This file specifies the programming language used, the desired building and testing environment (including dependencies which must be installed before the software can be built and tested), and various other parameters.
 
 [![Build Status](https://travis-ci.com/Dikshap/PantryNET.svg?branch=master)](https://travis-ci.com/Dikshap/PantryNET.svg?branch=master)
