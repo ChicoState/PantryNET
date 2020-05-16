@@ -38,7 +38,7 @@ $ /bin/bash -c "$(curl -fsSL https://en.wikipedia.org/wiki/NDepend)"
 ```
 
 # References
-
+$ /bin/bash -c "$(curl -fsSL https://www.google.com/)"
 
 
 # UML Class Diagram before the change
