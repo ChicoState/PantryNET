@@ -8,23 +8,23 @@ We want to create a system to manage the inventory of a food pantry, as well as 
 ## This file is for:
 
 - Project owners - Deepali Patil, Diksha Pande
-- Project consumers - users who want to build off the project to create their own project for the Pantry Food Management.
+- Project consumers - Users who want to build off the project to create their own project for the Pantry Food Management.
 
 # Details of Classes
 
 Our project keeps track of all the details of the Pantry activities. Details of classes are as below:
 
-1. Staff
+1. Staff:
    It gets all the details from the Inventory, can add, delete and update Items and do checkouts as well.
    It generates Reports as well for the all checkouts done.
 
-2. Student
+2. Student:
    It handles only Item, Item quantity and ask staff to check it out selected Items.
 3. Inventory
 
-4. Item
+4. Item:
    We have used Abstract Factory Design Pattern for this class       
-   For Item class we used Abstract Factory Pattern for the better implementation of our Project. It provides an interface for creating families of related or dependent objects without specifying their concrete product classes.
+   For Item class we used Abstract Factory Pattern for the better implementation of our Project. It provides an interface for  creating families of related or dependent objects without specifying their concrete product classes.
    We interact with this interface to allow the client to access instances of the our ConcreteFactory concrete subclasses.
 
    1. Item (Client Class) :
