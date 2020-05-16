@@ -37,14 +37,19 @@ For more information please go thorugh below link:
 $ /bin/bash -c "$(curl -fsSL https://en.wikipedia.org/wiki/NDepend)"
 ```
 
-# References
+## Initial Contributors
+
+Contributors are present in [Contributors](CONTRIBUTOR.md)
+
+
+## References
 $ /bin/bash -c "$(curl -fsSL https://www.google.com/)"
 
-# Acknowledgement
+## Acknowledgement
 
-* [GitHub](https://github.com/kbuffardi)
+* [Dr. Kevin Buffardi GitHub](https://github.com/kbuffardi)
 * [CSU Chico Portal](https://www.csuchico.edu/basic-needs/pantry.shtml)
-* [Search Engine](https://www.google.com/) 
+* [Search Engine](https://www.google.com/)
 
 # UML Class Diagram before the change
 
