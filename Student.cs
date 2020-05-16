@@ -17,35 +17,41 @@ public class Student {
   public string getStudentId(){
 		return sid;
   }
- // Get info about all items in the student's cart
-  public ArrayList<keyvaluepair<String, Double>> getCartInfo(){
-  int count = 1;
-  for (studentT<String, Double> itm : cart.entrySet()) {
-  System.out.println("\t" + count + ".");
-  System.out.println("\tItem code: " + itm.getKey());
-  System.out.println("\tItem quantity: " + itm.getValue());
-  count++;
-  }
-  return cart;
-  }
 
-	// add item with given code and qty to the student's cart
-	public void addItemToCart(String code, double qty){
+  // add item with given code and qty to the student's cart
+  public void addItemToCart(String code, double qty){
 		cart.put(code, qty);
-	}
+ }
 
 
   // Display complete Checkout History
   public void displayCheckoutHistory()
   {
-  	for (Checkout co : transactionHistory) {
-  		co.displayCheckoutInfo();
+  	for (Checkout check : transactionHistory) {
+  		check.displayCheckoutInfo();
   	  }
   }
 		// return rented item
 	public void returnRentedItem(String code, double qty){
-		Checkout co = new Checkout();
-		co.returnItem(code, qty);
+		Checkout check = new Checkout();
+		check.returnItem(code, qty);
 	}
 
 }
+ // Get info about all items in the student's cart
+  public ArrayList<keyvaluepair<String, Double>> getCartInfo(){
+  int count = 1;
+  for (studentT<String, Double> item : cart.entrySet()) {
+	  
+	   Console.WriteLine("-----------------------------------");
+           Console.WriteLine("-----Details about the inventory Info-----");
+           Console.WriteLine("");
+	   Console.WriteLine(count);
+	   Console.WriteLine("");
+	   Console.WriteLine(count);
+	   Console.WriteLine(item.getKey());
+	   Console.WriteLine(item.getValue());
+  	   count++;
+  }
+  return cart;
+  }
