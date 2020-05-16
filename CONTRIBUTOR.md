@@ -5,6 +5,13 @@ Our goal is to make a pantry project for the Chico State, like many other univer
 
 We want to create a system to manage the inventory of a food pantry, as well as generate reports about the pantry's activities. We need to design a website that manages the information.
 
+## This file is for:
+
+- Project owners - Deepali Patil, Diksha Pande
+- Project consumers - users who want to build off the project to create their own project for the Pantry Food Management.
+
+# Details of Classes
+
 Our project keeps track of all the details of the Pantry activities. Details of classes are as below:
 
 1. Staff
@@ -58,6 +65,7 @@ Our project keeps track of all the details of the Pantry activities. Details of 
 7. CheckOut
 
 # Short Links to Important Resources:
+
    docs: handbook / roadmap (you'll learn more about this in the roadmapping session)
    bugs: issue tracker / bug report tool
    comms: forum link, developer list, IRC/email
