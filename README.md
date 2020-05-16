@@ -30,9 +30,9 @@ NDepend is charged software.
 
 
 For more information please go thorugh below link,
-{bash}
-
+```{bash}
 $ /bin/bash -c "$(curl -fsSL https://en.wikipedia.org/wiki/NDepend)"
+```
 
 # Running the tests
 Explain how to run the automated tests for this system
