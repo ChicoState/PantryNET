@@ -27,9 +27,8 @@ Static code analysis is a method of debugging by examining source code before a 
 
 NDepend is a static analysis tool for .NET managed code.
 
-The tool supports a large number of code metrics that allow one to visualize dependencies using directed graphs and dependency matrix. The tool also performs code base snapshot comparisons, and validation of architectural and quality rules. User-defined rules can be written using LINQ queries. This feature is named CQLinq. The tool also comes with a large number of predefined CQLinq code rules. Code rules can be checked automatically in Visual Studio or during continuous integration.
-We have to add the NDepend extension to our Visual Studio, from that extension we can easily generate the report and see the detailed analysis of the code.
-NDepend is charged software.
+The tool supports a large number of code metrics that allow one to visualize dependencies using directed graphs and dependency matrix. The tool also performs code base snapshot comparisons, and validation of architectural and quality rules. User-defined rules can be written using LINQ queries. This feature is named CQLinq. The tool also comes with a large number of predefined CQLinq code rules. Code rules can be checked automatically in Visual Studio/Visual Studio Code or during continuous integration.
+We have to add the NDepend extension to our Visual Studio/Visual Studio Code, from that extension we can easily generate the report and see the detailed analysis on the Visual Studio or on the Chrome Server.NDepend is a charged software.
 
 
 For more information please go thorugh below link:
